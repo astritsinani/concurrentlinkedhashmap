@@ -35,21 +35,6 @@ tests:
     classes:
       - com.googlecode.concurrentlinkedhashmap.MultiThreadedTest
 
-  - name: Cache Benchmark
-    parameters:
-      initialCapacity: 500000
-      maximumCapacity: 5000
-      concurrencyLevel: 32
-      runId: ""
-      cache:
-        # Guava
-        # ConcurrentHashMap
-        # NonBlockingHashMap
-        # LinkedHashMap_Lru_Sync
-        ConcurrentLinkedHashMap
-    classes:
-      - com.googlecode.concurrentlinkedhashmap.benchmark.CacheBenchmark
-
   - name: Caliper Benchmark
     parameters:
       warmupMillis: 10000
