@@ -4,7 +4,7 @@
   <artifactId>concurrentlinkedhashmap-lru</artifactId>
   <packaging>jar</packaging>
   <name>ConcurrentLinkedHashMap</name>
-  <version>1.5-SNAPSHOT</version>
+  <version>1.5-compat1.0</version>
   <description>
     A high performance version of java.util.LinkedHashMap for use as a software cache.
   </description>
@@ -101,12 +101,12 @@
       <version>2.7.2</version>
       <scope>test</scope>
     </dependency>
-    <dependency>
+<!--    <dependency>
       <groupId>org.cachebench</groupId>
       <artifactId>cache-benchmark</artifactId>
       <version>r7903</version>
       <scope>test</scope>
-    </dependency>
+    </dependency> -->
     <dependency>
       <groupId>org.hamcrest</groupId>
       <artifactId>hamcrest-library</artifactId>

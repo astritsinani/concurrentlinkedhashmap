@@ -1558,6 +1558,20 @@ public final class ConcurrentLinkedHashMap<K, V> extends AbstractMap<K, V>
      * @throws IllegalArgumentException if the maximumWeightedCapacity is
      *     negative
      */
+    public Builder<K, V> maximumWeightedCapacity(int capacity) {
+      checkArgument(capacity >= 0);
+      this.capacity = capacity;
+      return this;
+    }
+    
+    /**
+     * Specifies the maximum weighted capacity to coerce the map to and may
+     * exceed it temporarily.
+     *
+     * @param capacity the weighted threshold to bound the map by
+     * @throws IllegalArgumentException if the maximumWeightedCapacity is
+     *     negative
+     */
     public Builder<K, V> maximumWeightedCapacity(long capacity) {
       checkArgument(capacity >= 0);
       this.capacity = capacity;
